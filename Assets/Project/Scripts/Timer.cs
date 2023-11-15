@@ -36,6 +36,7 @@ public class Timer : MonoBehaviour
             Debug.Log("Game Over!");
             gameOverUI.SetActive(true);
             finalScoreText.text = cubeDetector.score.ToString();
+            Time.timeScale = 0f;
             
 
             // Stop the timer when it reaches zero
@@ -45,6 +46,7 @@ public class Timer : MonoBehaviour
 
     public void RetryButton()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("SampleScene");
     }
     public void QuitButton()
