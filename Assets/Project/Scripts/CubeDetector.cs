@@ -9,7 +9,8 @@ public class CubeDetector : MonoBehaviour
     [SerializeField] private GameObject particleSystemPrefab;
     [SerializeField] private TMP_Text scoreText;
 
-    private int score = 0;
+    [HideInInspector]
+    public int score = 0;
 
     private void OnTriggerEnter(Collider other)
     {

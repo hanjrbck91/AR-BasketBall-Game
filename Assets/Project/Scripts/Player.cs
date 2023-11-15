@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
                 rb.useGravity = true;
                 rb.freezeRotation = false;
             }
-
+            Destroy(currentBall.gameObject, 5f);
             currentBall = null;
 
             // Invoke the SpawnNewBall method after a delay
@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
 
         currentBall = newBall;  // Set the newly instantiated ball as the current ball
 
-        Destroy(newBall, 10f);
+        
     }
 
     public void OnButtonClick()
