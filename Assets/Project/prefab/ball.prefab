@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 4387790106365404521}
   - component: {fileID: 6886658238371881191}
   - component: {fileID: 6570379224506958454}
+  - component: {fileID: 940152945373691225}
   - component: {fileID: 2998894806447800444}
-  - component: {fileID: 2845591463454207863}
-  - component: {fileID: 6621400118523518323}
+  - component: {fileID: 1374914256514137753}
   m_Layer: 0
   m_Name: ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6976685474156057121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.255, z: 0.212}
-  m_LocalScale: {x: 5.3098, y: 5.3098, z: 5.3098}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.009, y: 1.422, z: 8.182}
+  m_LocalScale: {x: 7.1568847, y: 7.1568847, z: 7.1568847}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,6 +86,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &940152945373691225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976685474156057121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da967a0e3ca09e40ab69d44a0778e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &2998894806447800444
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,14 +125,14 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &2845591463454207863
-MeshCollider:
+--- !u!135 &1374914256514137753
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6976685474156057121}
-  m_Material: {fileID: 13400000, guid: b71f9cd6c5a07c34c89371513505f200, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -131,25 +143,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2122681682525997855, guid: d8bc2ca222f75004196082974597e465, type: 3}
---- !u!114 &6621400118523518323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6976685474156057121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32903bbe64d9d294c95a3e6104a9e317, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ThrowForce: 100
-  m_ThrowDirectionX: 0.17
-  m_ThrowDirectionY: 0.67
-  m_BallCameraOffset: {x: 0, y: -1.4, z: 3}
-  ARCam: {fileID: 0}
-  m_SessionOrigin: {fileID: 0}
+  serializedVersion: 3
+  m_Radius: 0.02528567
+  m_Center: {x: -0.0000000055879354, y: 0.000000009313226, z: 0.0000000018626451}

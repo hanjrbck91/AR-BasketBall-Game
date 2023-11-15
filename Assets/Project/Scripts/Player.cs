@@ -25,7 +25,23 @@ public class Player : MonoBehaviour
         {
             currentBall.transform.position = playerCamera.transform.position + playerCamera.transform.forward * ballDistancefront + playerCamera.transform.up * ballDistancevertical;
 
-            if (Input.GetMouseButtonDown(0))
+            HandleInput();
+        }
+    }
+
+
+    void HandleInput()
+    {
+        // Check for mouse input
+        if (Input.GetMouseButtonDown(0))
+        {
+            ThrowBall();
+        }
+
+        // Check for touch input
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase == TouchPhase.Began)
             {
                 ThrowBall();
             }
