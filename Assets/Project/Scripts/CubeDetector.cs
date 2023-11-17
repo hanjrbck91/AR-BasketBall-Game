@@ -29,7 +29,7 @@ public class CubeDetector : MonoBehaviour
             particleSystemInstance.transform.parent = transform;
 
             // Destroy the particle system after 3 seconds
-            Destroy(particleSystemInstance, 1f);
+            Destroy(particleSystemInstance, .4f);
         }
     }
 }

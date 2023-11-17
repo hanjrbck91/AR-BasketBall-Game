@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
             currentBall = null;
 
             // Invoke the SpawnNewBall method after a delay
-            Invoke("SpawnNewBall", 1f);
+            Invoke("SpawnNewBall", 2f);
         }
     }
 
